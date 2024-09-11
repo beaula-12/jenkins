@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/beaula-12/jenkins'
+                git branch: 'main', url: 'https://github.com/beaula-12/jenkins.git'
             }
         }
         stage('Deploy') {
