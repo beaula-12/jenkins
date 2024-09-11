@@ -1,7 +1,8 @@
 pipeline {
     agent any
+
     stages {
-        stage('Checkout') {
+        stage('GitHub Clone') {
             steps {
                 git branch: 'main', url: 'https://github.com/beaula-12/jenkins.git'
             }
